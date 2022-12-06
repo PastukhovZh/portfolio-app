@@ -1,11 +1,11 @@
 {
   "name": "portfolio-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "PastukhovZh website",
   "scripts": {
-    "dev":"next dev -H 0.0.0.0",
-    "build":"next build",
-    "prettier": "prettier -write .",
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier --write .",
     "lint": "next lint"
   },
   "repository": {
