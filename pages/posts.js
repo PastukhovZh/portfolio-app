@@ -11,7 +11,7 @@ const Posts = () => (
     <Layout title ='Posts'>
         <Container>
             <Heading as='h4' fontSize={20} mb={4}>
-                PopularPosts
+                Something need to write here
             </Heading>
 </Container>
     </Layout>

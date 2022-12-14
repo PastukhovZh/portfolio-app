@@ -49,7 +49,7 @@ const Navbar = props => {
                         Works
                     </LinkItem>
                     <LinkItem href='/posts' path={path}>
-                        Posts
+                        Something need to do here
                     </LinkItem>
                 </Stack>
                 <Box flex={1} align='right'>
