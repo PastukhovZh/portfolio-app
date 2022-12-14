@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/PastukhovZh/portfolio-app/issues"
   },
-  "homepage": "https://github.com/pastukhovzh/portfolio-app",
+  "homepage": "https://pastukhovzh.github.io/portfolio-app",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.13",
     "@chakra-ui/react": "^2.4.3",
