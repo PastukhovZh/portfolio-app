@@ -2,7 +2,6 @@
   "name": "portfolio-app",
   "version": "1.0.0",
   "description": "PastukhovZh website",
-  
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
@@ -20,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/PastukhovZh/portfolio-app/issues"
   },
-  "homepage": "https://pastukhovzh.github.io/portfolio-app",
+  "homepage": "https://github.com/PastukhovZh/portfolio-app#readme",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.13",
     "@chakra-ui/react": "^2.4.3",
