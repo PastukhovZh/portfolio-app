@@ -12,19 +12,22 @@ const Work = () => {
                     Filmoteka <Badge>2022</Badge>
                 </Title>
                 <P>
-                    My application is written in React using the Redux library. Used public API for registration and authorization. This makes it possible to add contacts to individual users. Used the Chakra-UI library to style my application.
+                    A website with a responsive layout. Role: Authorization through Firebase. Connected Firebase to our project. Firebase checks for a valid email and password. It also shows corresponding error, warning the user.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
-                        <Link href="">Cсылка на Filmoteka <ExternalLinkIcon mx='2px'/></Link>
+                        <Link href="https://dzaporozhan.github.io/Filmoteka/">Filmoteka <ExternalLinkIcon mx='2px'/></Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Stack</Meta>
-                        <span>NodeJS, Parcell, JavaScript</span>
+                        <span>HTML, SASS/SCSS, JS, REST API, NodeJS, Parcell, Firebase</span>
                     </ListItem>
                 </List>
-                <WorkImage src='/images/works/Filmoteka.png'/>
+                <WorkImage src='/images/works/Filmoteka.png' />
+                <WorkImage src='/images/works/Filmoteka1.png'/>
+                <WorkImage src='/images/works/Filmoteka2.png'/>
+                <WorkImage src='/images/works/Filmoteka3.png'/>
             </Container>
         </Layout>
     )

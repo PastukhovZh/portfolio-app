@@ -12,19 +12,23 @@ const Work = () => {
                     WebStudio <Badge>2021</Badge>
                 </Title>
                 <P>
-                    My application is written in React using the Redux library. Used public API for registration and authorization. This makes it possible to add contacts to individual users. Used the Chakra-UI library to style my application.
+                    Fully responsive website for mobile devices, tablets and desktops. The code is written in pure JS and SASS.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
-                        <Link href="">Cсылка на WebStudio <ExternalLinkIcon mx='2px'/></Link>
+                        <Link href="https://pastukhovzh.github.io/goit-react-hw-08-phonebook/">WebStudio <ExternalLinkIcon mx='2px'/></Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Stack</Meta>
-                        <span>JavaScript, HTML, SASS/SCSS</span>
+                        <span>JS, HTML, SASS/SCSS</span>
                     </ListItem>
                 </List>
-                <WorkImage src='/images/works/WebStudio.png'/>
+                <WorkImage src='/images/works/WebStudio.png' />
+                <WorkImage src='/images/works/WebStudio1.png' />
+                <WorkImage src='/images/works/WebStudio2.png'/>
+                <WorkImage src='/images/works/WebStudio3.png' />
+                <WorkImage src='/images/works/WebStudio4.png'/>
             </Container>
         </Layout>
     )

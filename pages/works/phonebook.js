@@ -17,14 +17,18 @@ const Work = () => {
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
-                        <Link href="">Cсылка на Phonebook <ExternalLinkIcon mx='2px'/></Link>
+                        <Link href="https://pastukhovzh.github.io/goit-react-hw-08-phonebook/">Phonebook <ExternalLinkIcon mx='2px'/></Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Stack</Meta>
-                        <span>NodeJS, React, Redux, ChakraUI</span>
+                        <span>NodeJS, React, Redux, ChakraUI, JS, REST
+API</span>
                     </ListItem>
                 </List>
-                <WorkImage src='/images/works/Contact-app.png'/>
+                <WorkImage src='/images/works/Contact-app.png' />
+                <WorkImage src='/images/works/Contact-app1.png' />
+                <WorkImage src='/images/works/Contact-app2.png' />
+                <WorkImage src='/images/works/Contact-app3.png' />
             </Container>
         </Layout>
     )

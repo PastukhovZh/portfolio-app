@@ -12,19 +12,22 @@ const Work = () => {
                     Ice-cream <Badge>2022</Badge>
                 </Title>
                 <P>
-                    My application is written in React using the Redux library. Used public API for registration and authorization. This makes it possible to add contacts to individual users. Used the Chakra-UI library to style my application.
+                    A website with a responsive layout. Role: Create header Build header, and made it adaptive for various devices, and easy to use. When scrolling down, it disappears, and when scrolling up, it appears.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
-                        <Link href="">Cсылка на Ice-cream <ExternalLinkIcon mx='2px'/></Link>
+                        <Link href="https://dzaporozhan.github.io/The-Ice-Cream-Project/">The Ice Cream Project <ExternalLinkIcon mx='2px'/></Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Stack</Meta>
-                        <span>NodeJS, Parcell, JavaScript</span>
+                        <span>HTML, SASS/SCSS, JS, NodeJS, Parcel, JavaScript</span>
                     </ListItem>
                 </List>
-                <WorkImage src='/images/works/Ice-cream.png'/>
+                <WorkImage src='/images/works/Ice-cream.png' />
+                <WorkImage src='/images/works/Ice-cream1.png' />
+                <WorkImage src='/images/works/Ice-cream2.png' />
+                <WorkImage src='/images/works/Ice-cream3.png'/>
             </Container>
         </Layout>
     )
