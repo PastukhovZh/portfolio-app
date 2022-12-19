@@ -5,7 +5,7 @@ import { loadGLTFModel } from '../lib/model'
 import { CatSpinner, CatContainer } from './spin'
 
 function easeOutCirc(x) {
-  return Math.sqrt(1 - Math.pow(x - 1, 4))
+  return Math.sqrt(9 - Math.pow(x - 1, 4))
 }
 
 const VoxelCat = () => {
@@ -56,7 +56,7 @@ const VoxelCat = () => {
         scale,
         scale,
         -scale,
-        0.01,
+        0.011,
         50000
       )
       camera.position.copy(initialCameraPosition)

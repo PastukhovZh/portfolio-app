@@ -24,11 +24,11 @@ padding: 10px;
 
 const Logo = () => {
     return (
-        <Link href='/'>
+        <Link href='/'> 
                 <LogoBox>
                     
-                    <FootprintIcon/>
-                    <Text color={useColorModeValue('grey.800','whiteAlpha.900' )} fontFamily='M PLUS Rounded 1c' fontWeight='bold' ml={3}>Yevhen Pastukhov</Text>
+                    <FootprintIcon />
+                    <Text color={useColorModeValue('grey.800','whiteAlpha.900' )} fontFamily='M PLUS Rounded 1c' fontWeight='bold' ml={3} cursor='pointer' >Pastukhov  Yevhen</Text>
                 </LogoBox>
         </Link>
     )

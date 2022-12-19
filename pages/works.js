@@ -14,7 +14,7 @@ const Works = () => {
             <Heading as='h3' fontSize={20} mb={4}>
                 Works
             </Heading>
-            <SimpleGrid colums={[1, 1, 2]} gap={6}>
+            <SimpleGrid colums={[1, 1, 2]} gap={6} fontFamily='DynaPuff'>
                 <Section>
                     <WorkGridItem id='phonebook' title='Phonebook' thumbnail={thumbPhonebook}>
                         Create own Phonebook

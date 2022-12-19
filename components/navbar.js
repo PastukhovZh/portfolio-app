@@ -43,29 +43,30 @@ const Navbar = props => {
                     width={{ base: 'full', md: 'auto' }}
                     alignItems='center'
                     flexGrow={1}
-                    mt={{base:4, nmd:0}}
+                    mt={{ base: 4, nmd: 0 }}
+                    fontFamily='DynaPuff'
                 >
                     <LinkItem href="/works" path={path}>
                         Works
                     </LinkItem>
-                    <LinkItem href='/posts' path={path}>
-                        Something need to do here
+                    <LinkItem href='/contact' path={path}>
+                        Contact
                     </LinkItem>
                 </Stack>
                 <Box flex={1} align='right'>
                     <ThemeToggleButton/>
                     <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-                        <Menu>
+                        <Menu >
                             <MenuButton as={IconButton}  icon={<HamburgerIcon/>} variant='outline' aria-label='Options'/>
                             <MenuList>
                                 <NextLink href="/" passHref>
-                                    <MenuItem as={Link}>About</MenuItem>
+                                    <MenuItem fontFamily='DynaPuff' as={Link}>About</MenuItem>
                                 </NextLink>
                                 <NextLink href="/works" passHref>
-                                    <MenuItem as={Link}>Works</MenuItem>
+                                    <MenuItem fontFamily='DynaPuff' as={Link}>Works</MenuItem>
                                 </NextLink>
-                                <NextLink href="/posts" passHref>
-                                    <MenuItem as={Link}>Posts</MenuItem>
+                                <NextLink href="/contact" passHref>
+                                    <MenuItem fontFamily='DynaPuff' as={Link}>Contact</MenuItem>
                                 </NextLink>
                                 {/* <MenuItem as={Link} href="">Something with my work</MenuItem> */}
                             </MenuList>
