@@ -28,7 +28,8 @@ const Page = () => {
                     <Heading as='h2' variant='page-title' >
                         Pastukhov Yevhen
                     </Heading>
-                    <Paragraph>Swim coach turned Full-stack developer</Paragraph>
+                        <Paragraph>Full-stack developer</Paragraph>
+                        <Paragraph>(React |  Redux |  JavaScript |  NextJS |  NodeJS)</Paragraph>
                 </Box>
                 <Box flexShrink={0} mt={{base: 4, md:0}} ml={{md:6}} align='center'>
                     <Image borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" maxWidth="100px" display='inline-block' borderRadius="full" src="/images/DSC_0974.jpg" alt='Profile Image'/>
