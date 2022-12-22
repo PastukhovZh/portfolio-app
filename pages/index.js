@@ -11,6 +11,7 @@ import {Link,
     Image,
 } from "@chakra-ui/react"
 import Paragraph from "../components/paragraph"
+import Fonts from "../components/fonts";
 import Section from "../components/section"
 import { BioSection, BioYear } from "../components/bio"
 import Layout from "../components/layouts/article"
@@ -19,8 +20,9 @@ import {  IoLogoGithub,IoLogoLinkedin} from 'react-icons/io5'
 const Page = () => {
     return ( 
         <Layout>
+            <Fonts/>
         <Container>
-            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} mb={6} p={3} align='center' fontFamily='DynaPuff'>
+            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} mb={6} p={3} align='center'>
                 Hello, I&apos;m a full-stack developer based in Ukraine
             </Box>
             <Box display={{md:'flex'}}>
@@ -39,7 +41,8 @@ const Page = () => {
                 <Heading as="h3" variant='section-title'>
                     Work
                 </Heading>
-                <Paragraph>I am a Front-End developer, looking for a permanent job in a company where I can improve my skills and be able to fulfill myself as a developer. A company that will gladly help a young developer become an experienced specialist. I have knowledge and practice in using HTML, CSS, JavaScript, React and Redux, as well as familiar with the Firebase database. I like to overcome myself and discover something new both in myself and in development. If I don`t know something, I will figure it out, because I have been involved in sports all my life and I understand that in order to get something, you need to make efforts and time.</Paragraph>
+                    <Paragraph>After the "Java script" gates have been opened, I can no longer just walk past the computer and not "write code". These gates have recently opened, but I feel like a spark flashed between us, and it turned into a storm. Now it's forever, Java script in my heart. For myself, I discovered a lot of new things, which you will learn on this site. You can also see examples of my work by clicking on the button <NextLink href='/works' ><Link color='red.300'>My portfolio</Link></NextLink>.</Paragraph>
+                        <Paragraph>Have a nice trip! :)</Paragraph>
                 <Box align='center' my={4}>
                     <NextLink href='/works'>
                         <Button rightIcon={<ChevronRightIcon/>} colorScheme='teal' >
@@ -50,23 +53,44 @@ const Page = () => {
             </Section>
             <Section delay={0.2}>
                 <Heading as='h3' variant='section-title'>
-                Bio
+                About me 
                 </Heading>
-                <BioSection fontFamily='DynaPuff'>
-                    <BioYear>1997</BioYear>
-                    Born in Kyiv, Ukraine
+                <BioSection>
+                        <BioYear>Info</BioYear>
+                        I was born in Kyiv, Ukraine. I'm 25.
+                        I like creating interactive websites. I'm only a junior, and I already understand how limitless this programming language is. The eternal problem of juniors is commercial experience. What a pity that I only know what commercial experience is from Wikipedia. I love what I do and my heart beats faster when I open Vcode and run my app in a browser.
                     </BioSection>
-                    <BioSection fontFamily='DynaPuff'>
-                    <BioYear>2015 - 2020</BioYear>
-                    Master of Physical culture and sport in specialization "Olympic sport and education" in NATIONAL UNIVERSITY OF EDUCATION AND SPORTS OF UKRAINE. Ukraine, Kyiv
+                    <BioSection>
+                    <BioYear>Hobby</BioYear>
+                    I like to spend time in motion, swimming in the pool or on open water, walking down the street. I especially like to do this after the successful delivery of my application, or the completion of my projects on time. 
                     </BioSection>
-                    <BioSection fontFamily='DynaPuff'>
-                    <BioYear>2015 - 2022</BioYear>
-                    Master`s degree. Field of study Social and behavioral studies. Program subject area Economics in NATIONAL TRANSPORT UNIVERSITY. Ukraine, Kyiv
+                    <BioSection>
+                    <BioYear>Tech skills:</BioYear>
+                        <Paragraph>- HTML5/CSS3/SASS</Paragraph>
+                        <Paragraph>- Responsive/Adaptive design</Paragraph>
+                        <Paragraph>- Next.js</Paragraph>
+                        <Paragraph>- GIT</Paragraph>
+                        <Paragraph>- JavaScript</Paragraph>
+                        <Paragraph>- React</Paragraph>
+                        <Paragraph>- Redux</Paragraph>
+                        <Paragraph>- REST API</Paragraph>
+                        <Paragraph>- Handlebars</Paragraph>
+                        <Paragraph>- Webpack</Paragraph>
+                        <Paragraph>- Parcel</Paragraph>
+                        <Paragraph>- Node.js </Paragraph>
+                        <Paragraph>- MongoDB/Mongoose</Paragraph>
+                        <Paragraph>- ChakraUI</Paragraph>
+                        <Paragraph>- Styled components</Paragraph>
+                        <Paragraph>- Formik/Yup</Paragraph>
+                        <Paragraph>- ThreeJS</Paragraph>
+                        <Paragraph>- Blender/MagicaVoxel</Paragraph>
                     </BioSection>
-                <BioSection fontFamily='DynaPuff'>
-                    <BioYear>2021- 2022</BioYear>
-                    Full stack developer in IT SCHOOL GOIT. Ukraine, Kyiv
+                <BioSection>
+                    <BioYear>Soft skills:</BioYear>
+                    <Paragraph>- eager to learn</Paragraph>
+                    <Paragraph>- hard-working</Paragraph>
+                    <Paragraph>- responsible</Paragraph>
+                    <Paragraph>- curious</Paragraph>
                     </BioSection>
 
                     
