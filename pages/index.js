@@ -1,12 +1,12 @@
 import { ChevronRightIcon } from "@chakra-ui/icons"
 import NextLink from 'next/link'
 import {Link,
-  Container,
-  Heading,
-  Box,
-  Button,
-  List,
-  ListItem,
+    Container,
+    Heading,
+    Box,
+    Button,
+    List,
+    ListItem,
     useColorModeValue,
     Image,
 } from "@chakra-ui/react"
@@ -31,7 +31,7 @@ const Page = () => {
                         Pastukhov Yevhen
                     </Heading>
                         <Paragraph>Full-stack developer</Paragraph>
-                        <Paragraph>(React |  Redux |  JavaScript |  NextJS |  NodeJS)</Paragraph>
+                        <Paragraph>React |  Redux |  JavaScript |  NextJS |  NodeJS</Paragraph>
                 </Box>
                 <Box flexShrink={0} mt={{base: 4, md:0}} ml={{md:6}} align='center'>
                     <Image borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" maxWidth="100px" display='inline-block' borderRadius="full" src="/images/DSC_0974.jpg" alt='Profile Image'/>

@@ -9,7 +9,8 @@ const variants ={
     exit:{opacity: 0, x: 0, y: 20 }
 }
 
-const Layout = ({children, title}) => (
+const Layout = ({ children, title }) => (
+    // <motion.article initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ duration: 0.4, type: 'easeInOut' }} style={{ position:'relative', boxShadow: '-2px 0px 93px 21px  rgba(84,82,84,1)',  borderRadius:'10px', padding:'10px'}}></motion.article>
     <motion.article initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ duration: 0.4, type: 'easeInOut' }} style={{ position:'relative'}}>
         <>
             {title && (<Head>
