@@ -57,16 +57,16 @@ export default function FormToContact() {
                 name="email"
                 placeholder="example@mail.com"
                 type="email"
-                          />
-                          <FormLabel htmlFor="textarea">You can write me:</FormLabel>
-                          <Field as={Textarea}
-                              resize= 'none'
-                id="textarea"
-                name="textarea"
-                placeholder="Write here"
-                type="textarea"
               />
               {errors.email && touched.email ? <ParagraphError>{errors.email}</ParagraphError> : null}
+              <FormLabel htmlFor="textarea">You can write me:</FormLabel>
+              <Field as={Textarea}
+              resize= 'none'
+              id="textarea"
+              name="textarea"
+              placeholder="Write here"
+              type="textarea"
+              />
               <Button mt={3} align='center' type="submit">Submit</Button>
             </FormControl>
           </Form>)}

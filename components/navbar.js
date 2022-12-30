@@ -50,7 +50,7 @@ const Navbar = props => {
                         Works
                     </LinkItem>
                     <LinkItem href='/contact' path={path}>
-                        Contact me
+                        Contact
                     </LinkItem>
                 </Stack>
                 <Box flex={1} align='right'>
@@ -66,7 +66,7 @@ const Navbar = props => {
                                     <MenuItem fontFamily='DynaPuff' as={Link}>Works</MenuItem>
                                 </NextLink>
                                 <NextLink href="/contact" passHref>
-                                    <MenuItem fontFamily='DynaPuff' as={Link}>Contact me</MenuItem>
+                                    <MenuItem fontFamily='DynaPuff' as={Link}>Contact</MenuItem>
                                 </NextLink>
                                 {/* <MenuItem as={Link} href="">Something with my work</MenuItem> */}
                             </MenuList>

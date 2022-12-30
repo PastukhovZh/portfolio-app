@@ -1,34 +1,15 @@
-// import { initializeApp } from "firebase/app";
-// import { collection, doc, setDoc } from "firebase/firestore";
-// import { getDatabase } from "firebase/database";
-// import firebaseConfig from "./firebaseConfig";
-
-// const db = getDatabase(app);
-
-
-// const feedback = collection(db, "feedback");
-
-
-
-// export default async function addQuestion({ children }) {
-//     return (
-//     await setDoc(doc(feedback, 'question'), {children}
-//     ))
-// }
-
-
 import { getDatabase, ref, set } from "firebase/database";
 import firebaseConfig from "./firebaseConfig";
 import { initializeApp } from "firebase/app";
+import { nanoid } from 'nanoid'
 
 export default async function writeUserData(values) {
 const app = initializeApp(firebaseConfig);
-
+const id = nanoid()
     const db = getDatabase(app);
-        console.log(db)
-  return await set(ref(db, 'contact/'), values)
+  return await set(ref(db, 'contact/' + id ), values)
       .then(() => {
-          alert("Thank you, for your contact!")
+          alert("Thank you for your feedback! I will answer you shortly.")
           return
 })
 .catch((error) => {
