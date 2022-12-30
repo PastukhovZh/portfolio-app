@@ -40,18 +40,18 @@ export default function FormToContact() {
       >
         {({ errors, touched }) => (
           <Form >
-            <FormControl fontFamily='DynaPuff'>
-              <FormLabel htmlFor="name">Name</FormLabel>
+            <FormControl fontFamily='DynaPuff' >
+              <FormLabel htmlFor="name" mt={2}>Name</FormLabel>
               <Field as={Input} id="name" name="name" placeholder="Yevhen" />
               {errors.name && touched.name ? (
              <ParagraphError>{errors.name}</ParagraphError>
            ) : null}
-              <FormLabel htmlFor="number">Number</FormLabel>
+              <FormLabel htmlFor="number" mt={2}>Number</FormLabel>
               <Field as={Input} id="number" name="number" placeholder="+3801234567" />
                 {errors.number && touched.number ? (
              <ParagraphError>{errors.number}</ParagraphError>
            ) : null}
-              <FormLabel htmlFor="email">Email</FormLabel>
+              <FormLabel htmlFor="email" mt={2}>Email</FormLabel>
               <Field as={Input}
                 id="email"
                 name="email"
@@ -59,7 +59,7 @@ export default function FormToContact() {
                 type="email"
               />
               {errors.email && touched.email ? <ParagraphError>{errors.email}</ParagraphError> : null}
-              <FormLabel htmlFor="textarea">You can write me:</FormLabel>
+              <FormLabel htmlFor="textarea" mt={2}>You can write me:</FormLabel>
               <Field as={Textarea}
               resize= 'none'
               id="textarea"
@@ -67,7 +67,7 @@ export default function FormToContact() {
               placeholder="Write here"
               type="textarea"
               />
-              <Button mt={3} align='center' type="submit">Submit</Button>
+              <Button mt={3} align='center' type="submit" colorScheme='teal'>Submit</Button>
             </FormControl>
           </Form>)}
     </Formik>

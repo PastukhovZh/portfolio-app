@@ -15,7 +15,8 @@ import Fonts from "../components/fonts";
 import Section from "../components/section"
 import { BioSection, BioYear } from "../components/bio"
 import Layout from "../components/layouts/article"
-import {  IoLogoGithub,IoLogoLinkedin} from 'react-icons/io5'
+import {  IoLogoGithub,IoLogoLinkedin,IoLogoGoogle} from 'react-icons/io5'
+
 
 const Page = () => {
     return ( 
@@ -41,7 +42,7 @@ const Page = () => {
                 <Heading as="h3" variant='section-title'>
                     Work
                 </Heading>
-                    <Paragraph>After the "Java script" gates have been opened, I can no longer just walk past the computer and not "write code". These gates have recently opened, but I feel like a spark flashed between us, and it turned into a storm. Now it's forever, Java script in my heart. For myself, I discovered a lot of new things, which you will learn on this site. You can also see examples of my work by clicking on the button <NextLink href='/works' ><Link color='red.300'>My portfolio</Link></NextLink>.</Paragraph>
+                    <Paragraph>After the "Java script" gates have been opened, I can no longer just walk past the computer and not "write code". These gates have recently opened, but I feel like a spark flashed between us, and it turned into a storm. Now it's forever, Java script in my heart. For myself, I discovered a lot of new things, which you will learn on this site. You can also see examples of my work by clicking on the button <NextLink href='/works' ><Link color='red.300'>My portfolio</Link></NextLink>. You can also view my CV at <Link href='https://drive.google.com/file/d/1wbaQO_MQ4lKXxWzl8IeBxYFmLBe049sf/view?usp=share_link' color='red.300'>this link</Link>.</Paragraph>
                         <Paragraph>Have a nice trip! :)</Paragraph>
                 <Box align='center' my={4}>
                     <NextLink href='/works'>
@@ -58,7 +59,7 @@ const Page = () => {
                 <BioSection>
                         <BioYear>Info</BioYear>
                         I was born in Kyiv, Ukraine. I'm 25.
-                        I like creating interactive websites. I'm only a junior, and I already understand how limitless this programming language is. The eternal problem of juniors is commercial experience. What a pity that I only know what commercial experience is from Wikipedia. I love what I do and my heart beats faster when I open Vcode and run my app in a browser.
+                        I like creating interactive websites. I'm only a junior, and I already understand how limitless this programming language is. The eternal problem of juniors is commercial experience. What a pity that I only know what commercial experience is from Wikipedia. I love what I do and my heart beats faster when I open VScode and run my app in a browser.
                     </BioSection>
                     <BioSection>
                     <BioYear>Hobby</BioYear>
@@ -119,6 +120,17 @@ const Page = () => {
                 leftIcon={<IoLogoLinkedin />}
             >
                 @Pastukhov Yevhen
+            </Button>
+            </Link>
+        </ListItem>
+        <ListItem>
+            <Link href="https://drive.google.com/file/d/1wbaQO_MQ4lKXxWzl8IeBxYFmLBe049sf/view?usp=share_link" target="_blank">
+            <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoGoogle />}
+            >
+                @Pastukhov Yevhen CV
             </Button>
             </Link>
         </ListItem>

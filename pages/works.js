@@ -10,13 +10,13 @@ import Layout from "../components/layouts/article";
 
 const Works = () => {
     return (<Layout>
-        <Container>
+        <Container >
             <Heading as='h3' fontSize={20} mb={4}>
                 Works
             </Heading>
-            <SimpleGrid display='flex'  gap={6} fontFamily='DynaPuff'>
-                <Section>
-                    <WorkGridItem id='phonebook' title='Phonebook' thumbnail={thumbPhonebook}>
+            <SimpleGrid display='flex'  gap={6} fontFamily='DynaPuff' >
+                <Section >
+                    <WorkGridItem  id='phonebook' title='Phonebook' thumbnail={thumbPhonebook} >
                         Create own Phonebook
                     </WorkGridItem>
                     <WorkGridItem id='webstudio' title='WebStudio' thumbnail={thumbWebStudio}>
