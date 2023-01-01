@@ -1,10 +1,11 @@
 import Logo from './logo';
 import NextLink from 'next/link'
 import {
-    Container, Box, Link, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, useColorModeValue
+    Container, Box, Link, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, useColorModeValue, Button
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button';
+import { IoLogoGithub } from 'react-icons/io5';
 
 const LinkItem = ({ href, path, children }) => {
     const active = path === href
@@ -52,6 +53,14 @@ const Navbar = props => {
                     <LinkItem href='/contact' path={path}>
                         Contact
                     </LinkItem>
+                    <Link href="https://github.com/PastukhovZh/portfolio-app" target="_blank">
+            <Button
+                variant="ghost"
+                colorScheme="teal"
+            >
+                You can check the code 
+            </Button>
+            </Link>
                 </Stack>
                 <Box flex={1} align='right'>
                     <ThemeToggleButton/>
@@ -68,7 +77,7 @@ const Navbar = props => {
                                 <NextLink href="/contact" passHref>
                                     <MenuItem fontFamily='DynaPuff' as={Link}>Contact</MenuItem>
                                 </NextLink>
-                                {/* <MenuItem as={Link} href="">Something with my work</MenuItem> */}
+                                <MenuItem as={Link} fontFamily='DynaPuff' href="https://github.com/PastukhovZh/portfolio-app">Code in Github</MenuItem>
                             </MenuList>
                         </Menu>
                     </Box>
